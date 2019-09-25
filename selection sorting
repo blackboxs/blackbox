@@ -1,0 +1,39 @@
+//selection sort//
+#include<stdio.h>
+int swap(int *num1,int *num2)
+{
+    int temp;
+    temp=*num2;
+    *num2=*num1;
+    *num1=temp;
+    return 0;
+}
+int main()
+{
+    int size,count=0,count1=0,minimum;
+    printf("Enter size of array: ");
+    scanf("%d",&size);
+    int array[size];
+    printf("Enter Elements of array: ");
+    for(count=0;count<size;count++)
+    {
+        scanf("%d",&array[count]);
+    }
+    for(count=0;count<size;count++)
+    {
+        minimum=count;
+        for(count1=count;count1<size;count1++)
+        {
+            if(array[minimum]>array[count1])
+            {
+                minimum=count1;
+            }
+        }
+        swap(&array[count],&array[minimum]);
+    }
+    for(count=0;count<size;count++)
+    {
+        printf("%d",array[count]);
+    }
+    return 0;
+}
