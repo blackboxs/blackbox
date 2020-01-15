@@ -5,7 +5,7 @@
 
 **Pictorial Description**
 
-![Github Logo](/example_img.png)
+<img src="https://github.com/Cybertron-Avneesh/blackbox/blob/master/example_img.PNG">
 
 **Code Snippet**
 
